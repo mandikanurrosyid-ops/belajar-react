@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s;
+    font-family: 'Popins', Arial, Helvetica, sans-serif;
+}
+
+h1:hover{
+    color:beige;
+    transform: translateX(100);
+}
