@@ -1,20 +1,25 @@
-import  {useState} from  "react";
+import TombolHitung from './TombolHitung';
+import FormNama from './FormNama';
 
-function TombolHitung() {
-  const [jumlah, setjumlah] = useState(0);
-
-  function tambahAngka() {
-    setjumlah(jumlah +1);
-  }
-
+function App() {
   return (
     <div>
-      <h2>Jumlah klik : {jumlah}</h2> 
-      <button onClick={tambahAngka}>
-        Klik Aku!
-      </button>
+      <header style={{ textAlign: 'center', marginBottom: '30px' }}>
+      <h1>Aplikasi Belajar React</h1>
+      <p>Proyek latihan komponen dasar dan state</p>
+      </header>
+
+      <main>
+        <section>
+          <TombolHitung />
+        </section>
+
+        <section>
+          <FormNama />
+        </section>
+      </main>
     </div>
   );
 }
 
-export default TombolHitung;
+export default App;
