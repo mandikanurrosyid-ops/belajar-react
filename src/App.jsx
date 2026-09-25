@@ -1,5 +1,7 @@
 import TombolHitung from './TombolHitung';
 import FormNama from './FormNama';
+import TodoList from './TodoList';
+
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
 
         <section>
           <FormNama />
+        </section>
+        <section>
+          <TodoList/>
         </section>
       </main>
     </div>
